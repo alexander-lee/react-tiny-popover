@@ -1,5 +1,5 @@
 {
-  "name": "react-tiny-popover",
+  "name": "@alexanderlee/react-tiny-popover",
   "version": "7.1.0",
   "description": "A simple and highly customizable popover react higher order component with no other dependencies! Typescript friendly.",
   "keywords": [
@@ -23,11 +23,11 @@
   "main": "dist/Popover.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc -p . && yarn copy-types",
+    "build": "tsc -p . && pnpm copy-types",
     "clean": "rm -rf dist/",
     "copy-types": "cp src/index.d.ts dist/index.d.ts",
-    "start-demo": "cd docs && yarn start",
-    "watch": "tsc-watch -p . --onSuccess 'yarn copy-types'"
+    "start-demo": "cd docs && pnpm start",
+    "watch": "tsc-watch -p . --onSuccess 'pnpm copy-types'"
   },
   "devDependencies": {
     "@types/react": "^17.0.19",

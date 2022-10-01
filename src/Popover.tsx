@@ -69,7 +69,7 @@ const PopoverInternal = forwardRef<HTMLElement, PopoverProps>(
     });
 
     const onPositionPopover = useCallback(
-      (popoverState: PopoverState) => setPopoverState(popoverState),
+      (popoverState: PopoverState) => setPopoverState((prevPopoverState: PopoverState) => ({...prevPopoverState, ...popoverState})),
       [],
     );
 
